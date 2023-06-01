@@ -1,8 +1,10 @@
 
+import javax.swing.JFrame;
+
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.print("HELLO WORLD");
+		MyFrame myFrame = new MyFrame();
 
 	}
 
