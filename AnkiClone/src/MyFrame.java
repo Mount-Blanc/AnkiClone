@@ -16,6 +16,14 @@ public class MyFrame extends JFrame implements ActionListener {
 		JMenu ToolsMenu = new JMenu("Tools");
 		JMenu HelpMenu = new JMenu("Help");
 
+		JMenuItem SwitchProfile = new JMenuItem("Switch Profile");
+		JMenuItem Import = new JMenuItem("Import");
+		JMenuItem Export = new JMenuItem("Export");
+
+		FileMenu.add(SwitchProfile);
+		FileMenu.add(Import);
+		FileMenu.add(Export);
+
 		
 		menuBar.add(FileMenu);
 		menuBar.add(EditMenu);
