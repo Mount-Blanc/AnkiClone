@@ -25,6 +25,22 @@ public class MyFrame extends JFrame implements ActionListener {
 		JMenuItem Guide = new JMenuItem("Guide");
 		JMenuItem Support = new JMenuItem("Support Anki");
 		JMenuItem About = new JMenuItem("About");
+		
+		JMenuItem Study = new JMenuItem("Study Deck");
+		JMenuItem Create = new JMenuItem("Create Filtered Deck");
+		JMenuItem CheckD = new JMenuItem("Check Database");
+		JMenuItem CheckM = new JMenuItem("Check Media");
+		JMenuItem Empty = new JMenuItem("Empty Cards");
+		
+		ToolsMenu.add(Study);
+		ToolsMenu.add(Create);
+		ToolsMenu.add(CheckD);
+		ToolsMenu.add(CheckM);
+		ToolsMenu.add(Empty);
+
+
+
+
 
 		HelpMenu.add(Guide);
 		HelpMenu.add(Support);
