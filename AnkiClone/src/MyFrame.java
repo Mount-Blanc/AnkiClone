@@ -19,6 +19,14 @@ public class MyFrame extends JFrame implements ActionListener {
 	 GetShared.setBounds(200,100,100,50);
 	 GetShared.setText("GetShared");
 	 
+	 JButton CreateDeck = new JButton();
+	 CreateDeck.setBounds(200,100,100,50);
+	 CreateDeck.setText("CreateDeck"); 
+	 
+	 JButton ImportFile = new JButton();
+	 ImportFile.setBounds(200,100,100,50);
+	 ImportFile.setText("Import File");
+	 
 	 	JPanel container1 = new JPanel();
 	 	container1.setPreferredSize(new Dimension(30,30));
 	 	container1.setBackground(Color.red);
@@ -38,6 +46,9 @@ public class MyFrame extends JFrame implements ActionListener {
 		this.add(container2,BorderLayout.CENTER);
 		this.add(container3,BorderLayout.SOUTH);
 		container3.add(GetShared);
+		container3.add(CreateDeck);
+		container3.add(ImportFile);
+
 
 		
 		JMenuBar menuBar = new JMenuBar();
