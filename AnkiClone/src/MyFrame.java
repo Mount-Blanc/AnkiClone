@@ -14,6 +14,11 @@ public class MyFrame extends JFrame implements ActionListener {
 	
  MyFrame(){
 	 
+	 
+	 JButton GetShared = new JButton();
+	 GetShared.setBounds(200,100,100,50);
+	 GetShared.setText("GetShared");
+	 
 	 	JPanel container1 = new JPanel();
 	 	container1.setPreferredSize(new Dimension(30,30));
 	 	container1.setBackground(Color.red);
@@ -32,6 +37,7 @@ public class MyFrame extends JFrame implements ActionListener {
 		this.add(container1,BorderLayout.NORTH);
 		this.add(container2,BorderLayout.CENTER);
 		this.add(container3,BorderLayout.SOUTH);
+		container3.add(GetShared);
 
 		
 		JMenuBar menuBar = new JMenuBar();
