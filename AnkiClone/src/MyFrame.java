@@ -1,12 +1,38 @@
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.event.*;
 import javax.swing.*;
 
+
 public class MyFrame extends JFrame implements ActionListener {
+	
+	
  MyFrame(){
+	 
+	 	JPanel container1 = new JPanel();
+	 	container1.setPreferredSize(new Dimension(30,30));
+	 	container1.setBackground(Color.red);
+	 	JPanel container2 = new JPanel();
+	 	container2.setPreferredSize(new Dimension(30,30));
+	 	container2.setBackground(Color.blue);
+	 	JPanel container3 = new JPanel();
+	 	container3.setPreferredSize(new Dimension(30,30));
+	 	container3.setBackground(Color.green);
+
+
+	 
+	 
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setResizable(false);
-		this.setSize(420,420);
+		this.setSize(550,550);
+		this.add(container1,BorderLayout.NORTH);
+		this.add(container2,BorderLayout.CENTER);
+		this.add(container3,BorderLayout.SOUTH);
+
 		
 		JMenuBar menuBar = new JMenuBar();
 		this.setJMenuBar(menuBar);
