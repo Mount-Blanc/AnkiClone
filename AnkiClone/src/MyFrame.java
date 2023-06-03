@@ -41,9 +41,7 @@ public class MyFrame extends JFrame implements ActionListener {
 	 	JPanel containerA = new JPanel();
 	 	containerA.setPreferredSize(new Dimension(510,30));
 	 	containerA.setBackground(Color.red);
-	 	JPanel containerB = new JPanel();
-	 	containerB.setPreferredSize(new Dimension(510,30));
-	 	containerB.setBackground(Color.white);
+	 	
 	 	
 	 	JPanel container2 = new JPanel();
 	 	container2.setPreferredSize(new Dimension(30,30));
@@ -63,13 +61,11 @@ public class MyFrame extends JFrame implements ActionListener {
 		this.add(container2,BorderLayout.CENTER);
 		this.add(container3,BorderLayout.SOUTH);
 
-		containerA.add(Decks);
-		containerA.add(Add);
-		containerA.add(Browse);
-		containerA.add(Stats);
-		containerA.add(Sync);
-		container1.add(containerA,BorderLayout.NORTH);
-		container1.add(containerB,BorderLayout.SOUTH);
+		container1.add(Decks);
+		container1.add(Add);
+		container1.add(Browse);
+		container1.add(Stats);
+		container1.add(Sync);
 
 
 		container3.add(GetShared);
