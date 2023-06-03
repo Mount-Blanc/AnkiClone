@@ -69,7 +69,6 @@ public class MyFrame extends JFrame implements ActionListener {
 	 	
 	 	JPanel container3 = new JPanel();
 	 	container3.setPreferredSize(new Dimension(30,30));
-	 	container3.setBackground(Color.green);
 	 	
 
 
