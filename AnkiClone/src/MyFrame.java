@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.border.Border;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -80,11 +81,14 @@ public class MyFrame extends JFrame implements ActionListener {
 		this.add(container2,BorderLayout.CENTER);
 		this.add(container3,BorderLayout.SOUTH);
 
+	    Border blackline = BorderFactory.createLineBorder(Color.black);
+		
 		container1.add(Decks);
 		container1.add(Add);
 		container1.add(Browse);
 		container1.add(Stats);
 		container1.add(Sync);
+		container1.setBorder(blackline);
 
 		container2.add(containerA,BorderLayout.NORTH);
 		container2.add(containerB,BorderLayout.CENTER);
