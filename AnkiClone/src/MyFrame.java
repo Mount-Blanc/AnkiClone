@@ -17,11 +17,11 @@ public class MyFrame extends JFrame implements ActionListener {
 	 
 	 JButton GetShared = new JButton();
 	 GetShared.setBounds(200,100,100,50);
-	 GetShared.setText("GetShared");
+	 GetShared.setText("Get Shared");
 	 
 	 JButton CreateDeck = new JButton();
 	 CreateDeck.setBounds(200,100,100,50);
-	 CreateDeck.setText("CreateDeck"); 
+	 CreateDeck.setText("Create Deck"); 
 	 
 	 JButton ImportFile = new JButton();
 	 ImportFile.setBounds(200,100,100,50);
@@ -36,6 +36,9 @@ public class MyFrame extends JFrame implements ActionListener {
 	 
 	 JLabel New=new JLabel("New");
 	 JLabel Due=new JLabel("Due");
+	 
+	 JLabel Study=new JLabel("Studied 0 cards in 0 seconds today (0s/card");
+
 
 
 
@@ -51,8 +54,11 @@ public class MyFrame extends JFrame implements ActionListener {
 	 	containerA.setPreferredSize(new Dimension(520,30));
 	 	containerA.setBackground(Color.red);
 	 	JPanel containerB = new JPanel();
-	 	containerB.setPreferredSize(new Dimension(510,30));
+	 	containerB.setPreferredSize(new Dimension(520,30));
 	 	containerB.setBackground(Color.white);
+	 	JPanel containerC = new JPanel();
+	 	containerC.setPreferredSize(new Dimension(510,30));
+	 	containerC.setBackground(Color.yellow);
 	 	
 	 	
 	 	
@@ -78,9 +84,11 @@ public class MyFrame extends JFrame implements ActionListener {
 
 		container2.add(containerA,BorderLayout.NORTH);
 		container2.add(containerB,BorderLayout.CENTER);
+		container2.add(containerC,BorderLayout.SOUTH);
 		containerA.add(Decks1);
 		containerA.add(New);
 		containerA.add(Due);
+		containerC.add(Study);
 
 
 		container3.add(GetShared);
@@ -107,13 +115,13 @@ public class MyFrame extends JFrame implements ActionListener {
 		JMenuItem Support = new JMenuItem("Support Anki");
 		JMenuItem About = new JMenuItem("About");
 		
-		JMenuItem Study = new JMenuItem("Study Deck");
+		JMenuItem StudyDeck = new JMenuItem("Study Deck");
 		JMenuItem Create = new JMenuItem("Create Filtered Deck");
 		JMenuItem CheckD = new JMenuItem("Check Database");
 		JMenuItem CheckM = new JMenuItem("Check Media");
 		JMenuItem Empty = new JMenuItem("Empty Cards");
 		
-		ToolsMenu.add(Study);
+		ToolsMenu.add(StudyDeck);
 		ToolsMenu.add(Create);
 		ToolsMenu.add(CheckD);
 		ToolsMenu.add(CheckM);
