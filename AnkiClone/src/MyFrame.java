@@ -37,7 +37,7 @@ public class MyFrame extends JFrame implements ActionListener {
 	 JLabel New=new JLabel("New");
 	 JLabel Due=new JLabel("Due");
 	 
-	 JLabel Study=new JLabel("Studied 0 cards in 0 seconds today (0s/card");
+	 JLabel Study=new JLabel("Studied 0 cards in 0 seconds today (0s/card)");
 
 
 
