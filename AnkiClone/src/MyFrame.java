@@ -28,6 +28,7 @@ public class MyFrame extends JFrame implements ActionListener {
 	 ImportFile.setText("Import File");
 	 
 	 JLabel Decks=new JLabel("Decks");
+	 JLabel Decks1=new JLabel("Decks");
 	 JLabel Add=new JLabel("Add");
 	 JLabel Browse=new JLabel("Browse");
 	 JLabel Stats=new JLabel("Stats");
@@ -77,7 +78,7 @@ public class MyFrame extends JFrame implements ActionListener {
 
 		container2.add(containerA,BorderLayout.NORTH);
 		container2.add(containerB,BorderLayout.CENTER);
-		containerA.add(Decks);
+		containerA.add(Decks1);
 		containerA.add(New);
 		containerA.add(Due);
 
