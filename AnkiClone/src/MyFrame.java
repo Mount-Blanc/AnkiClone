@@ -38,6 +38,14 @@ public class MyFrame extends JFrame implements ActionListener {
 	 JLabel Due=new JLabel("Due");
 	 
 	 JLabel Study=new JLabel("Studied 0 cards in 0 seconds today (0s/card)");
+	 
+	 JLabel DeckName=new JLabel("Default");
+	 JLabel newNumber1=new JLabel("0");
+	 JLabel Learning=new JLabel("0");
+	 JLabel Due2=new JLabel("0");
+
+
+
 
 
 
@@ -88,6 +96,10 @@ public class MyFrame extends JFrame implements ActionListener {
 		containerA.add(Decks1);
 		containerA.add(New);
 		containerA.add(Due);
+		containerB.add(DeckName);
+		containerB.add(newNumber1);
+		containerB.add(Learning);
+		containerB.add(Due2);
 		containerC.add(Study);
 
 
