@@ -36,14 +36,23 @@ public class MyFrame extends JFrame implements ActionListener {
 
 	 
 	 	JPanel container1 = new JPanel();
-	 	container1.setPreferredSize(new Dimension(30,30));
-	 	container1.setBackground(Color.red);
+	 	container1.setPreferredSize(new Dimension(300,90));
+	 	
+	 	JPanel containerA = new JPanel();
+	 	containerA.setPreferredSize(new Dimension(510,30));
+	 	containerA.setBackground(Color.red);
+	 	JPanel containerB = new JPanel();
+	 	containerB.setPreferredSize(new Dimension(510,30));
+	 	containerB.setBackground(Color.white);
+	 	
 	 	JPanel container2 = new JPanel();
 	 	container2.setPreferredSize(new Dimension(30,30));
 	 	container2.setBackground(Color.blue);
+	 	
 	 	JPanel container3 = new JPanel();
 	 	container3.setPreferredSize(new Dimension(30,30));
 	 	container3.setBackground(Color.green);
+	 	
 
 
 	 
@@ -53,11 +62,15 @@ public class MyFrame extends JFrame implements ActionListener {
 		this.add(container1,BorderLayout.NORTH);
 		this.add(container2,BorderLayout.CENTER);
 		this.add(container3,BorderLayout.SOUTH);
-		container1.add(Decks);
-		container1.add(Add);
-		container1.add(Browse);
-		container1.add(Stats);
-		container1.add(Sync);
+
+		containerA.add(Decks);
+		containerA.add(Add);
+		containerA.add(Browse);
+		containerA.add(Stats);
+		containerA.add(Sync);
+		container1.add(containerA,BorderLayout.NORTH);
+		container1.add(containerB,BorderLayout.SOUTH);
+
 
 		container3.add(GetShared);
 		container3.add(CreateDeck);
