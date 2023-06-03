@@ -27,6 +27,14 @@ public class MyFrame extends JFrame implements ActionListener {
 	 ImportFile.setBounds(200,100,100,50);
 	 ImportFile.setText("Import File");
 	 
+	 JLabel Decks=new JLabel("Decks");
+	 JLabel Add=new JLabel("Add");
+	 JLabel Browse=new JLabel("Browse");
+	 JLabel Stats=new JLabel("Stats");
+	 JLabel Sync=new JLabel("Sync");
+
+
+	 
 	 	JPanel container1 = new JPanel();
 	 	container1.setPreferredSize(new Dimension(30,30));
 	 	container1.setBackground(Color.red);
@@ -45,6 +53,12 @@ public class MyFrame extends JFrame implements ActionListener {
 		this.add(container1,BorderLayout.NORTH);
 		this.add(container2,BorderLayout.CENTER);
 		this.add(container3,BorderLayout.SOUTH);
+		container1.add(Decks);
+		container1.add(Add);
+		container1.add(Browse);
+		container1.add(Stats);
+		container1.add(Sync);
+
 		container3.add(GetShared);
 		container3.add(CreateDeck);
 		container3.add(ImportFile);
