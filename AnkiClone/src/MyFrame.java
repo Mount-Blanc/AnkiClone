@@ -32,6 +32,10 @@ public class MyFrame extends JFrame implements ActionListener {
 	 JLabel Browse=new JLabel("Browse");
 	 JLabel Stats=new JLabel("Stats");
 	 JLabel Sync=new JLabel("Sync");
+	 
+	 JLabel New=new JLabel("New");
+	 JLabel Due=new JLabel("Due");
+
 
 
 	 
@@ -73,6 +77,9 @@ public class MyFrame extends JFrame implements ActionListener {
 
 		container2.add(containerA,BorderLayout.NORTH);
 		container2.add(containerB,BorderLayout.CENTER);
+		containerA.add(Decks);
+		containerA.add(New);
+		containerA.add(Due);
 
 
 		container3.add(GetShared);
