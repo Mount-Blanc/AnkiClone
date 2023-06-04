@@ -8,7 +8,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.*;
 import javax.swing.*;
-
+import javax.swing.border.EmptyBorder;
 
 public class MyFrame extends JFrame implements ActionListener {
 	
@@ -69,10 +69,13 @@ public class MyFrame extends JFrame implements ActionListener {
 	 	
 	 	
 	 	JPanel container3 = new JPanel();
-	 	container3.setPreferredSize(new Dimension(30,30));
+	 	container3.setPreferredSize(new Dimension(210,70));
+	 	
+		JPanel buttonContainer = new JPanel();
+	 	buttonContainer.setPreferredSize(new Dimension(500,50));
 	 	
 
-
+ 
 	 
 	 
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -89,10 +92,13 @@ public class MyFrame extends JFrame implements ActionListener {
 		container1.add(Stats);
 		container1.add(Sync);
 		container1.setBorder(blackline);
-
+		
+		
 		container2.add(containerA,BorderLayout.NORTH);
 		container2.add(containerB,BorderLayout.CENTER);
 		container2.add(containerC,BorderLayout.SOUTH);
+		container3.add(buttonContainer,BorderLayout.CENTER);
+        
 		containerA.add(Decks1);
 		containerA.add(New);
 		containerA.add(Due);
@@ -101,11 +107,12 @@ public class MyFrame extends JFrame implements ActionListener {
 		containerB.add(Learning);
 		containerB.add(Due2);
 		containerC.add(Study);
+	
 
 
-		container3.add(GetShared);
-		container3.add(CreateDeck);
-		container3.add(ImportFile);
+		buttonContainer.add(GetShared);
+		buttonContainer.add(CreateDeck);
+		buttonContainer.add(ImportFile);
 
 
 		
